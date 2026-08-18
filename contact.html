@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | LoopStack Technologies</title>
+    <meta name="description" content="Get in touch with LoopStack Technologies. Send us an email, ask questions, or propose new collaborations.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="container navbar-container">
+            <a href="index.html#home" class="logo-wrapper">
+                <img src="assets/logo_icon.png" alt="LoopStack Technologies Icon" class="logo-icon-img">
+                <span class="logo-text">LoopStack<span class="text-accent">.</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#products" class="nav-link">Products</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <a href="#contactForm" class="btn btn-primary nav-btn-mobile">Get Started</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contactForm" class="btn btn-primary nav-btn-desktop">Get Started</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay Background -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <main class="contact-page-main">
+        <!-- Contact Page Banner -->
+        <section class="contact-hero">
+            <div class="container text-center">
+                <div class="section-badge">Get In Touch</div>
+                <h1>Let's Connect</h1>
+                <p class="section-subtitle">
+                    Have a project proposal, question, or collaboration idea? Reach out to LoopStack Technologies, and we will get back to you within 24 hours.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section Content -->
+        <section class="contact-detail-section">
+            <div class="container contact-page-container">
+                <!-- Contact Info Panel -->
+                <div class="contact-info-panel">
+                    <div class="info-block">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </div>
+                        <div class="info-details">
+                            <h3>Email Us</h3>
+                            <a href="mailto:info@loopstacktechnologies.com" class="info-link">info@loopstacktechnologies.com</a>
+                            <a href="mailto:loopstacktechnologies@gmail.com" class="info-link info-link-secondary">loopstacktechnologies@gmail.com</a>
+                            <p class="info-subtext">Send us mail directly anytime.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        </div>
+                        <div class="info-details">
+                            <h3>Availability</h3>
+                            <p class="info-linktext">Monday – Friday</p>
+                            <p class="info-subtext">9:00 AM – 6:00 PM (IST)</p>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        </div>
+                        <div class="info-details">
+                            <h3>Our Philosophy</h3>
+                            <p class="info-subtext text-justify">
+                                We believe in building simple, powerful, and useful tools. When you contact us, you will talk directly with our development team—no automated sales funnels, just helpful communication.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tiny decorative element -->
+                    <div class="info-decorative-logo">
+                        <img src="assets/logo_icon.png" alt="LoopStack Logo" class="deco-logo">
+                    </div>
+                </div>
+
+                <!-- Contact Form Panel -->
+                <div class="contact-form-panel">
+                    <div class="form-card">
+                        <form id="contactForm" class="contact-form">
+                            <!-- Hidden inputs for FormSubmit -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            
+                            <div class="form-row-2">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group custom-select-group">
+                                <label class="form-label">Type of Inquiry</label>
+                                <input type="hidden" id="inquiry_type" name="inquiry_type" value="General Inquiry">
+                                <div class="custom-select-container">
+                                    <div class="custom-select-trigger" id="inquiryTrigger">
+                                        <span class="trigger-text">General Inquiry</span>
+                                        <svg class="select-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </div>
+                                    <div class="custom-options" id="inquiryOptions">
+                                        <div class="custom-option selected" data-value="General Inquiry">General Inquiry</div>
+                                        <div class="custom-option" data-value="Project Proposal">Project Proposal</div>
+                                        <div class="custom-option" data-value="Feedback & Suggestion">Feedback & Suggestion</div>
+                                        <div class="custom-option" data-value="Collaboration Opportunity">Collaboration Opportunity</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" rows="6" class="form-control form-textarea" placeholder="Describe your project, question, or idea here..." required></textarea>
+                            </div>
+
+                            <button type="submit" id="submitBtn" class="btn btn-primary btn-submit">
+                                <span class="btn-text">Send Message</span>
+                                <svg class="btn-send-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                                <span class="spinner"></span>
+                            </button>
+                        </form>
+
+                        <!-- Form Submission Status Alerts -->
+                        <div id="formStatus" class="form-status">
+                            <div class="status-content success-content">
+                                <div class="status-icon-circle success-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                                <h2>Message Sent!</h2>
+                                <p>Thank you for reaching out. Your message has been forwarded successfully to <strong>loopstacktechnologies@gmail.com</strong>.</p>
+                                <p class="sub-alert">Our team will get back to you shortly.</p>
+                                <button type="button" id="resetFormBtn" class="btn btn-secondary btn-sm">Send Another Message</button>
+                            </div>
+
+                            <div class="status-content error-content">
+                                <div class="status-icon-circle error-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                </div>
+                                <h2>Submission Failed</h2>
+                                <p>We were unable to submit your message in real-time. This could be due to a connection issue.</p>
+                                <p class="sub-alert">Please email us directly at <a href="mailto:loopstacktechnologies@gmail.com" class="text-accent-link">loopstacktechnologies@gmail.com</a>.</p>
+                                <button type="button" id="retryFormBtn" class="btn btn-secondary btn-sm">Try Again</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html#home" class="logo-wrapper">
+                    <img src="assets/logo_icon.png" alt="LoopStack Technologies Logo Icon" class="logo-icon-img">
+                    <span class="logo-text">LoopStack<span class="text-accent">.</span></span>
+                </a>
+                <p class="footer-tagline">Building useful technology for the modern web.</p>
+            </div>
+            
+            <div class="footer-nav">
+                <h4>Navigation</h4>
+                <div class="footer-links">
+                    <a href="index.html#home">Home</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#products">Products</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Inquiries</h4>
+                <a href="mailto:info@loopstacktechnologies.com" class="footer-email-link">info@loopstacktechnologies.com</a>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p class="copyright">&copy; 2026 LoopStack Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>
