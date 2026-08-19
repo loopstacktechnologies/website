@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology & Web Insights Blog | LoopStack Technologies</title>
+    <meta name="description" content="Tutorials, industry insights, and developer articles covering web design standards, database indexing, and SEO optimization strategies.">
+    <meta name="keywords" content="software engineering blog, tech industry insights, web development standards, search engine optimization tips">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo-wrapper">
+                <img src="assets/logo_icon.png" alt="LoopStack Technologies Logo Icon" class="logo-icon-img">
+                <span class="logo-text">LoopStack<span class="text-accent">.</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                
+                <!-- Services Dropdown -->
+                <div class="nav-dropdown">
+                    <a href="javascript:void(0)" class="nav-link nav-dropdown-toggle">
+                        Services
+                        <svg class="nav-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                    <div class="nav-dropdown-menu">
+                        <a href="web-development.html" class="dropdown-item">Web Development</a>
+                        <a href="mobile-apps.html" class="dropdown-item">Mobile Apps</a>
+                        <a href="cloud-devops.html" class="dropdown-item">Cloud & DevOps</a>
+                        <a href="ui-ux-design.html" class="dropdown-item">UI/UX Design</a>
+                        <a href="api-integrations.html" class="dropdown-item">API & Integrations</a>
+                    </div>
+                </div>
+
+                <!-- Work Dropdown -->
+                <div class="nav-dropdown">
+                    <a href="javascript:void(0)" class="nav-link nav-dropdown-toggle">
+                        Work
+                        <svg class="nav-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                    <div class="nav-dropdown-menu">
+                        <a href="case-studies.html" class="dropdown-item">Case Studies</a>
+                        <a href="featured-projects.html" class="dropdown-item">Featured Projects</a>
+                        <a href="client-reviews.html" class="dropdown-item">Client Reviews</a>
+                    </div>
+                </div>
+
+                <a href="technologies.html" class="nav-link">Technologies</a>
+
+                <!-- Company Dropdown -->
+                <div class="nav-dropdown">
+                    <a href="javascript:void(0)" class="nav-link nav-dropdown-toggle">
+                        Company
+                        <svg class="nav-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                    <div class="nav-dropdown-menu">
+                        <a href="about.html" class="dropdown-item">About Us</a>
+                        <a href="our-process.html" class="dropdown-item">Our Process</a>
+                        <a href="careers.html" class="dropdown-item">Careers</a>
+                    </div>
+                </div>
+
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="btn btn-primary nav-btn-mobile">Contact Us</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary nav-btn-desktop">Contact Us</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay Background -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <main class="subpage-main">
+        <!-- Subpage Hero Banner -->
+        <section class="subpage-hero">
+            <div class="container text-center">
+                <div class="section-badge">Insights</div>
+                <h1>LoopStack Blog</h1>
+                <p class="section-subtitle">Engineering tutorials, industry insights, and web standards analysis direct from our development team.</p>
+            </div>
+        </section>
+
+        <!-- Subpage Content -->
+        <section class="subpage-content-section">
+            
+            <div class="blog-layout container">
+                <div class="blog-posts-grid">
+                    <article class="blog-post-card">
+                        <div class="post-meta">August 2026 · SEO & Web</div>
+                        <h3>Building for Search Index Speed: The Lighthouse Core Web Vitals</h3>
+                        <p>A deep dive into Largest Contentful Paint (LCP) and Cumulative Layout Shift (CLS), explaining how code bundling, static assets hosting, and CSS variables affect rankings.</p>
+                        <a href="javascript:void(0)" class="read-more-link">Read Article →</a>
+                    </article>
+
+                    <article class="blog-post-card">
+                        <div class="post-meta">July 2026 · Development</div>
+                        <h3>Why We Replaced CSS Frameworks with Custom Variable Grids</h3>
+                        <p>An engineering analysis of utility classes vs native CSS grids. How custom design tokens reduce file sizes and improve visual responsiveness for complex SaaS portals.</p>
+                        <a href="javascript:void(0)" class="read-more-link">Read Article →</a>
+                    </article>
+
+                    <article class="blog-post-card">
+                        <div class="post-meta">June 2026 · Cloud & Infrastructure</div>
+                        <h3>Securing RESTful APIs: A Comprehensive JWT Checklist</h3>
+                        <p>Best practices for token signing algorithms, refresh token database storage models, CORS options, and request throttling configurations to secure backend databases.</p>
+                        <a href="javascript:void(0)" class="read-more-link">Read Article →</a>
+                    </article>
+                </div>
+            </div>
+        
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="subpage-cta-section container">
+            <div class="cta-banner-glass">
+                <div class="cta-content">
+                    <h2>Ready to Build Something Useful?</h2>
+                    <p>Have an upcoming system design, software project, or system integration query? Work directly with our technology team to engineer it.</p>
+                </div>
+                <div class="cta-action">
+                    <a href="contact.html" class="btn btn-primary">Start a Collaboration</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-wrapper">
+                    <img src="assets/logo_icon.png" alt="LoopStack Technologies Logo Icon" class="logo-icon-img">
+                    <span class="logo-text">LoopStack<span class="text-accent">.</span></span>
+                </a>
+                <p class="footer-tagline">Building useful technology for the modern web.</p>
+            </div>
+            
+            <div class="footer-nav">
+                <h4>Navigation</h4>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="technologies.html">Technologies</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Inquiries</h4>
+                <a href="mailto:info@loopstacktechnologies.com" class="footer-email-link">info@loopstacktechnologies.com</a>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p class="copyright">&copy; 2026 LoopStack Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>

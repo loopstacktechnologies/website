@@ -20,21 +20,63 @@
     <!-- Navigation Header -->
     <header class="main-header">
         <div class="container navbar-container">
-            <a href="index.html#home" class="logo-wrapper">
-                <img src="assets/logo_icon.png" alt="LoopStack Technologies Icon" class="logo-icon-img">
+            <a href="index.html" class="logo-wrapper">
+                <img src="assets/logo_icon.png" alt="LoopStack Technologies Logo Icon" class="logo-icon-img">
                 <span class="logo-text">LoopStack<span class="text-accent">.</span></span>
             </a>
             
             <nav class="nav-menu" id="navMenu">
-                <a href="index.html#home" class="nav-link">Home</a>
-                <a href="index.html#about" class="nav-link">About</a>
-                <a href="index.html#products" class="nav-link">Products</a>
-                <a href="contact.html" class="nav-link active">Contact</a>
-                <a href="#contactForm" class="btn btn-primary nav-btn-mobile">Get Started</a>
+                <a href="index.html" class="nav-link">Home</a>
+                
+                <!-- Services Dropdown -->
+                <div class="nav-dropdown">
+                    <a href="javascript:void(0)" class="nav-link nav-dropdown-toggle">
+                        Services
+                        <svg class="nav-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                    <div class="nav-dropdown-menu">
+                        <a href="web-development.html" class="dropdown-item">Web Development</a>
+                        <a href="mobile-apps.html" class="dropdown-item">Mobile Apps</a>
+                        <a href="cloud-devops.html" class="dropdown-item">Cloud & DevOps</a>
+                        <a href="ui-ux-design.html" class="dropdown-item">UI/UX Design</a>
+                        <a href="api-integrations.html" class="dropdown-item">API & Integrations</a>
+                    </div>
+                </div>
+
+                <!-- Work Dropdown -->
+                <div class="nav-dropdown">
+                    <a href="javascript:void(0)" class="nav-link nav-dropdown-toggle">
+                        Work
+                        <svg class="nav-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                    <div class="nav-dropdown-menu">
+                        <a href="case-studies.html" class="dropdown-item">Case Studies</a>
+                        <a href="featured-projects.html" class="dropdown-item">Featured Projects</a>
+                        <a href="client-reviews.html" class="dropdown-item">Client Reviews</a>
+                    </div>
+                </div>
+
+                <a href="technologies.html" class="nav-link">Technologies</a>
+
+                <!-- Company Dropdown -->
+                <div class="nav-dropdown">
+                    <a href="javascript:void(0)" class="nav-link nav-dropdown-toggle">
+                        Company
+                        <svg class="nav-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                    <div class="nav-dropdown-menu">
+                        <a href="about.html" class="dropdown-item">About Us</a>
+                        <a href="our-process.html" class="dropdown-item">Our Process</a>
+                        <a href="careers.html" class="dropdown-item">Careers</a>
+                    </div>
+                </div>
+
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="btn btn-primary nav-btn-mobile">Contact Us</a>
             </nav>
 
             <div class="nav-actions">
-                <a href="#contactForm" class="btn btn-primary nav-btn-desktop">Get Started</a>
+                <a href="contact.html" class="btn btn-primary nav-btn-desktop">Contact Us</a>
                 <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
                     <span class="bar"></span>
                     <span class="bar"></span>

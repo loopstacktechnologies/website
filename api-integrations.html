@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Development & Systems Integration | LoopStack Technologies</title>
+    <meta name="description" content="Secure API development and systems integration services. RESTful and GraphQL APIs connecting backends, databases, and microservices.">
+    <meta name="keywords" content="custom api development, restful api integration, graphql integration services, microservices architecture, system integration">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo-wrapper">
+                <img src="assets/logo_icon.png" alt="LoopStack Technologies Logo Icon" class="logo-icon-img">
+                <span class="logo-text">LoopStack<span class="text-accent">.</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                
+                <!-- Services Dropdown -->
+                <div class="nav-dropdown">
+                    <a href="javascript:void(0)" class="nav-link nav-dropdown-toggle">
+                        Services
+                        <svg class="nav-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                    <div class="nav-dropdown-menu">
+                        <a href="web-development.html" class="dropdown-item">Web Development</a>
+                        <a href="mobile-apps.html" class="dropdown-item">Mobile Apps</a>
+                        <a href="cloud-devops.html" class="dropdown-item">Cloud & DevOps</a>
+                        <a href="ui-ux-design.html" class="dropdown-item">UI/UX Design</a>
+                        <a href="api-integrations.html" class="dropdown-item">API & Integrations</a>
+                    </div>
+                </div>
+
+                <!-- Work Dropdown -->
+                <div class="nav-dropdown">
+                    <a href="javascript:void(0)" class="nav-link nav-dropdown-toggle">
+                        Work
+                        <svg class="nav-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                    <div class="nav-dropdown-menu">
+                        <a href="case-studies.html" class="dropdown-item">Case Studies</a>
+                        <a href="featured-projects.html" class="dropdown-item">Featured Projects</a>
+                        <a href="client-reviews.html" class="dropdown-item">Client Reviews</a>
+                    </div>
+                </div>
+
+                <a href="technologies.html" class="nav-link">Technologies</a>
+
+                <!-- Company Dropdown -->
+                <div class="nav-dropdown">
+                    <a href="javascript:void(0)" class="nav-link nav-dropdown-toggle">
+                        Company
+                        <svg class="nav-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                    <div class="nav-dropdown-menu">
+                        <a href="about.html" class="dropdown-item">About Us</a>
+                        <a href="our-process.html" class="dropdown-item">Our Process</a>
+                        <a href="careers.html" class="dropdown-item">Careers</a>
+                    </div>
+                </div>
+
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="btn btn-primary nav-btn-mobile">Contact Us</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary nav-btn-desktop">Contact Us</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay Background -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <main class="subpage-main">
+        <!-- Subpage Hero Banner -->
+        <section class="subpage-hero">
+            <div class="container text-center">
+                <div class="section-badge">Services</div>
+                <h1>API & Integrations</h1>
+                <p class="section-subtitle">Custom API design, secure backend database connections, GraphQL and REST endpoints, and seamless third-party systems integrations.</p>
+            </div>
+        </section>
+
+        <!-- Subpage Content -->
+        <section class="subpage-content-section">
+            
+            <div class="service-details-grid container">
+                <div class="details-text">
+                    <h2>Connect and Sync Your Business Data Safely</h2>
+                    <p class="lead-text">We connect backend applications, mobile apps, databases, and external SaaS services. Our secure API architectures ensure reliable data flow and high scalability.</p>
+                    <p>Whether you need to integrate payment processing (Stripe), email automation (SendGrid), CRM databases (Salesforce), or build a custom API interface to expose your proprietary data, we engineer secure protocols with API key authentication, request limits, and data validation.</p>
+                    
+                    <h3 class="margin-top-md">Our API Engineering Fields</h3>
+                    <ul class="styled-checklist">
+                        <li><strong>Custom API Design</strong>: Restful endpoints and GraphQL queries tailored to frontend structures.</li>
+                        <li><strong>Third-Party Integrations</strong>: Connecting tools like Stripe, Twilio, Google APIs, and Shopify.</li>
+                        <li><strong>Secure Auth Integrations</strong>: JWT tokens, OAuth2 configurations, and multi-factor authorization.</li>
+                        <li><strong>Performance & Rate Limits</strong>: Request throttling and database caching (Redis) for low latency.</li>
+                    </ul>
+                </div>
+                <div class="details-graphic">
+                    <div class="details-card-glass">
+                        <div class="card-line"><span>API Patterns:</span> <span class="badge badge-dev">REST / GraphQL / gRPC</span></div>
+                        <div class="card-line"><span>Auth Patterns:</span> <span class="badge badge-dev">OAuth2 / JWT / API-Keys</span></div>
+                        <div class="card-line"><span>Caching Layer:</span> <span class="badge badge-dev">Redis / Memory-Cache</span></div>
+                        <div class="card-chart">
+                            <div class="chart-bar" style="width: 98%">API Availability Index</div>
+                            <div class="chart-bar" style="width: 93%">Response Latency (&lt;80ms)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="subpage-cta-section container">
+            <div class="cta-banner-glass">
+                <div class="cta-content">
+                    <h2>Ready to Build Something Useful?</h2>
+                    <p>Have an upcoming system design, software project, or system integration query? Work directly with our technology team to engineer it.</p>
+                </div>
+                <div class="cta-action">
+                    <a href="contact.html" class="btn btn-primary">Start a Collaboration</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-wrapper">
+                    <img src="assets/logo_icon.png" alt="LoopStack Technologies Logo Icon" class="logo-icon-img">
+                    <span class="logo-text">LoopStack<span class="text-accent">.</span></span>
+                </a>
+                <p class="footer-tagline">Building useful technology for the modern web.</p>
+            </div>
+            
+            <div class="footer-nav">
+                <h4>Navigation</h4>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="technologies.html">Technologies</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Inquiries</h4>
+                <a href="mailto:info@loopstacktechnologies.com" class="footer-email-link">info@loopstacktechnologies.com</a>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p class="copyright">&copy; 2026 LoopStack Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>

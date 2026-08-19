@@ -242,4 +242,34 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
+    // 7. Mobile Navigation Dropdowns Accordion logic
+    const dropdownToggles = document.querySelectorAll('.nav-dropdown-toggle');
+
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+            // Only trigger accordion on mobile screens
+            if (window.innerWidth < 768) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                const parent = toggle.closest('.nav-dropdown');
+                const isAlreadyOpen = parent.classList.contains('open');
+                
+                // Close other open dropdowns
+                document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+                    if (dropdown !== parent) {
+                        dropdown.classList.remove('open');
+                    }
+                });
+                
+                // Toggle current dropdown
+                if (isAlreadyOpen) {
+                    parent.classList.remove('open');
+                } else {
+                    parent.classList.add('open');
+                }
+            }
+        });
+    });
 });
