@@ -403,13 +403,15 @@ p.hero-description {
 
 /* Desktop Dropdown Hover Trigger */
 @media (min-width: 768px) {
-    .nav-dropdown:hover .nav-dropdown-menu {
+    .nav-dropdown:hover .nav-dropdown-menu,
+    .nav-dropdown.open .nav-dropdown-menu {
         opacity: 1;
         visibility: visible;
         transform: translateX(-50%) translateY(0);
     }
     
-    .nav-dropdown:hover .nav-arrow {
+    .nav-dropdown:hover .nav-arrow,
+    .nav-dropdown.open .nav-arrow {
         transform: rotate(180deg);
         color: var(--color-accent-cyan);
     }
@@ -1182,10 +1184,36 @@ p.hero-description {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
     gap: 60px;
     padding-bottom: 60px;
     border-bottom: 1px solid var(--color-border);
+}
+
+.footer-social h4 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-dark);
+    margin-bottom: 20px;
+}
+
+.footer-social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-social-link {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: var(--transition-fast);
+}
+
+.footer-social-link:hover {
+    color: var(--color-accent-cyan);
 }
 
 .footer-brand {
@@ -1315,8 +1343,9 @@ p.hero-description {
         gap: 40px;
     }
 
-    .footer-contact {
-        grid-column: span 2;
+    .footer-contact,
+    .footer-social {
+        grid-column: span 1;
     }
 }
 
@@ -2542,5 +2571,62 @@ p.hero-description {
         width: 100%;
     }
 }
+
+/* Dropdown Button Triggers Reset */
+button.nav-link.nav-dropdown-toggle {
+    background: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-text-medium);
+    padding: 8px 0;
+    cursor: pointer;
+    line-height: inherit;
+    position: relative;
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+    button.nav-link.nav-dropdown-toggle {
+        font-size: 1.1rem;
+        width: 100%;
+        text-align: left;
+        padding: 12px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+button.nav-link.nav-dropdown-toggle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-accent-cyan);
+    transition: var(--transition-fast);
+}
+
+button.nav-link.nav-dropdown-toggle:hover {
+    color: var(--color-accent-cyan);
+}
+
+button.nav-link.nav-dropdown-toggle:hover::after {
+    width: 100%;
+}
+
+/* Keyboard Focus States */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+.custom-select-trigger:focus-visible {
+    outline: 2px solid var(--color-accent-cyan);
+    outline-offset: 4px;
+}
+
 
 

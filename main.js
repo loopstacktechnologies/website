@@ -243,33 +243,85 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // 7. Mobile Navigation Dropdowns Accordion logic
+    // 7. Navigation Dropdowns Accordion and Accessibility logic
     const dropdownToggles = document.querySelectorAll('.nav-dropdown-toggle');
 
     dropdownToggles.forEach(toggle => {
         toggle.addEventListener('click', (e) => {
-            // Only trigger accordion on mobile screens
-            if (window.innerWidth < 768) {
-                e.preventDefault();
-                e.stopPropagation();
-                
-                const parent = toggle.closest('.nav-dropdown');
-                const isAlreadyOpen = parent.classList.contains('open');
-                
-                // Close other open dropdowns
-                document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
-                    if (dropdown !== parent) {
-                        dropdown.classList.remove('open');
-                    }
-                });
-                
-                // Toggle current dropdown
-                if (isAlreadyOpen) {
-                    parent.classList.remove('open');
-                } else {
-                    parent.classList.add('open');
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const parent = toggle.closest('.nav-dropdown');
+            const isAlreadyOpen = parent.classList.contains('open');
+            
+            // Close other open dropdowns
+            document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+                if (dropdown !== parent) {
+                    dropdown.classList.remove('open');
+                    const btn = dropdown.querySelector('.nav-dropdown-toggle');
+                    if (btn) btn.setAttribute('aria-expanded', 'false');
                 }
+            });
+            
+            // Toggle current dropdown
+            if (isAlreadyOpen) {
+                parent.classList.remove('open');
+                toggle.setAttribute('aria-expanded', 'false');
+            } else {
+                parent.classList.add('open');
+                toggle.setAttribute('aria-expanded', 'true');
             }
         });
+    });
+
+    // Mouse hover triggers for desktop ARIA states
+    document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+        const toggleBtn = dropdown.querySelector('.nav-dropdown-toggle');
+        if (toggleBtn) {
+            dropdown.addEventListener('mouseenter', () => {
+                if (window.innerWidth >= 768) {
+                    toggleBtn.setAttribute('aria-expanded', 'true');
+                }
+            });
+            dropdown.addEventListener('mouseleave', () => {
+                if (window.innerWidth >= 768) {
+                    dropdown.classList.remove('open');
+                    toggleBtn.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+    });
+
+    // Close dropdowns if user clicks outside of them
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.nav-dropdown')) {
+            document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+                dropdown.classList.remove('open');
+                const btn = dropdown.querySelector('.nav-dropdown-toggle');
+                if (btn) btn.setAttribute('aria-expanded', 'false');
+            });
+        }
+    });
+
+    // Escape key to close active dropdowns and mobile menu
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            // Close dropdowns
+            document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+                dropdown.classList.remove('open');
+                const btn = dropdown.querySelector('.nav-dropdown-toggle');
+                if (btn) btn.setAttribute('aria-expanded', 'false');
+            });
+            // Close mobile drawer
+            const menuToggle = document.getElementById('menuToggle');
+            const navMenu = document.getElementById('navMenu');
+            const navOverlay = document.getElementById('navOverlay');
+            if (menuToggle && menuToggle.classList.contains('active')) {
+                menuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                navOverlay.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            }
+        }
     });
 });

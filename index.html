@@ -11,9 +11,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="canonical" href="https://loopstack.tech/">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:site_name" content="LoopStack Technologies">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="LoopStack Technologies | Building useful technology for the modern web.">
+    <meta property="og:description" content="LoopStack Technologies creates simple, reliable, and user-friendly web products designed to solve real-world problems. Currently building a next-gen SEO Tools Platform.">
+    <meta property="og:url" content="https://loopstack.tech/">
+    <meta property="og:image" content="https://loopstack.tech/assets/logo_banner.png">
+    
+    <!-- Twitter/X Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LoopStack Technologies | Building useful technology for the modern web.">
+    <meta name="twitter:description" content="LoopStack Technologies creates simple, reliable, and user-friendly web products designed to solve real-world problems. Currently building a next-gen SEO Tools Platform.">
+    <meta name="twitter:image" content="https://loopstack.tech/assets/logo_banner.png">
+
+    <!-- JSON-LD Structured Data for Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "LoopStack Technologies",
+      "url": "https://loopstack.tech/",
+      "logo": "https://loopstack.tech/assets/logo_icon.png",
+      "sameAs": [
+        "https://www.linkedin.com/company/140263896/",
+        "https://www.instagram.com/loopstacktechnologies/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "info@loopstacktechnologies.com",
+        "contactType": "customer support"
+      }
+    }
+    </script>
 </head>
 <body>
 
@@ -30,10 +62,10 @@
                 
                 <!-- Services Dropdown -->
                 <div class="nav-dropdown">
-                    <a href="javascript:void(0)" class="nav-link nav-dropdown-toggle">
+                    <button type="button" class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
                         Services
                         <svg class="nav-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </a>
+                    </button>
                     <div class="nav-dropdown-menu">
                         <a href="web-development.html" class="dropdown-item">Web Development</a>
                         <a href="mobile-apps.html" class="dropdown-item">Mobile Apps</a>
@@ -45,10 +77,10 @@
 
                 <!-- Work Dropdown -->
                 <div class="nav-dropdown">
-                    <a href="javascript:void(0)" class="nav-link nav-dropdown-toggle">
+                    <button type="button" class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
                         Work
                         <svg class="nav-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </a>
+                    </button>
                     <div class="nav-dropdown-menu">
                         <a href="case-studies.html" class="dropdown-item">Case Studies</a>
                         <a href="featured-projects.html" class="dropdown-item">Featured Projects</a>
@@ -60,10 +92,10 @@
 
                 <!-- Company Dropdown -->
                 <div class="nav-dropdown">
-                    <a href="javascript:void(0)" class="nav-link nav-dropdown-toggle">
+                    <button type="button" class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
                         Company
                         <svg class="nav-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </a>
+                    </button>
                     <div class="nav-dropdown-menu">
                         <a href="about.html" class="dropdown-item">About Us</a>
                         <a href="our-process.html" class="dropdown-item">Our Process</a>
@@ -154,6 +186,7 @@
                             Active Development
                         </div>
                         <h3 class="product-title">SEO Tools Platform</h3>
+                        <p class="coming-soon-text"><em>Coming soon — currently under development.</em></p>
                         <p class="product-description">
                             We are currently developing an SEO tools platform designed to help website owners, developers, marketers, and businesses improve their online presence with simple and powerful web tools.
                         </p>
@@ -174,7 +207,7 @@
                             <div class="mockup-header">
                                 <div class="mockup-search-bar">
                                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                                    <span>https://loopstack.tech/seo-analyzer</span>
+                                    <span>SEO Tools Platform</span>
                                 </div>
                             </div>
                             <div class="mockup-body">
@@ -363,7 +396,7 @@
     <footer class="main-footer">
         <div class="container footer-grid">
             <div class="footer-brand">
-                <a href="#home" class="logo-wrapper">
+                <a href="index.html" class="logo-wrapper">
                     <img src="assets/logo_icon.png" alt="LoopStack Technologies Logo Icon" class="logo-icon-img">
                     <span class="logo-text">LoopStack<span class="text-accent">.</span></span>
                 </a>
@@ -373,9 +406,9 @@
             <div class="footer-nav">
                 <h4>Navigation</h4>
                 <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#products">Products</a>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="featured-projects.html">Products</a>
                     <a href="contact.html">Contact</a>
                 </div>
             </div>
@@ -383,6 +416,14 @@
             <div class="footer-contact">
                 <h4>Inquiries</h4>
                 <a href="mailto:info@loopstacktechnologies.com" class="footer-email-link">info@loopstacktechnologies.com</a>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="footer-social-links">
+                    <a href="https://www.linkedin.com/company/140263896/" target="_blank" rel="noopener noreferrer" aria-label="LoopStack Technologies on LinkedIn" class="footer-social-link">LinkedIn</a>
+                    <a href="https://www.instagram.com/loopstacktechnologies/" target="_blank" rel="noopener noreferrer" aria-label="LoopStack Technologies on Instagram" class="footer-social-link">Instagram</a>
+                </div>
             </div>
         </div>
 
