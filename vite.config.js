@@ -20,6 +20,7 @@ export default defineConfig({
         caseStudies: resolve(__dirname, 'case-studies.html'),
         featuredProjects: resolve(__dirname, 'featured-projects.html'),
         clientReviews: resolve(__dirname, 'client-reviews.html'),
+        terms: resolve(__dirname, 'terms.html'),
       },
     },
   },
