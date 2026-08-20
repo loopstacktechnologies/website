@@ -1184,8 +1184,8 @@ p.hero-description {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr;
-    gap: 60px;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1.2fr;
+    gap: 40px;
     padding-bottom: 60px;
     border-bottom: 1px solid var(--color-border);
 }
@@ -1229,7 +1229,7 @@ p.hero-description {
     max-width: 300px;
 }
 
-.footer-nav h4, .footer-contact h4 {
+.footer-nav-col h4, .footer-nav h4, .footer-contact h4 {
     font-size: 0.9rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -1339,13 +1339,12 @@ p.hero-description {
     }
 
     .footer-grid {
-        grid-template-columns: 1.2fr 0.8fr;
+        grid-template-columns: 1fr 1fr;
         gap: 40px;
     }
 
-    .footer-contact,
-    .footer-social {
-        grid-column: span 1;
+    .footer-brand {
+        grid-column: span 2;
     }
 }
 
