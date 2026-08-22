@@ -1184,7 +1184,7 @@ p.hero-description {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1.3fr 0.8fr 0.8fr 0.8fr 1.7fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
     gap: 40px;
     padding-bottom: 60px;
     border-bottom: 1px solid var(--color-border);
