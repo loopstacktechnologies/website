@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Services | LoopStack Technologies</title>
+  <meta name="description" content="Explore LoopStack Technologies' full range of IT services — Web Development, Mobile Apps, Cloud &amp; DevOps, UI/UX Design, and API Integrations." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b6eff'/><text y='.9em' font-size='70' x='10' fill='white' font-family='Arial' font-weight='900'>L</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .svc-detail { padding: 100px 0; }
+    .svc-detail:nth-child(even) { background: var(--off-white); }
+    .svc-detail:nth-child(odd)  { background: #fff; }
+    .svc-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
+    .svc-detail-grid.reverse { direction: rtl; }
+    .svc-detail-grid.reverse > * { direction: ltr; }
+    .svc-visual {
+      border-radius: var(--radius-xl); overflow: hidden;
+      background: linear-gradient(145deg, var(--primary-xlight), var(--light));
+      height: 400px; display: flex; align-items: center; justify-content: center;
+      font-size: 6rem; color: var(--primary);
+      position: relative;
+    }
+    .svc-visual::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(11,110,255,0.08), rgba(0,180,255,0.05));
+    }
+    .svc-visual i { position: relative; z-index: 1; }
+    .svc-tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+    .svc-tag { background: var(--primary-xlight); color: var(--primary); font-size: 0.8rem; font-weight: 600; padding: 6px 14px; border-radius: var(--radius-full); }
+    .svc-features-list { display: flex; flex-direction: column; gap: 13px; margin: 20px 0; }
+    .svc-feat-item { display: flex; align-items: flex-start; gap: 12px; }
+    .svc-feat-item i { color: var(--primary); margin-top: 3px; font-size: 0.95rem; flex-shrink: 0; }
+    .svc-feat-item span { font-size: 0.93rem; color: var(--gray); }
+    @media (max-width: 900px) { .svc-detail-grid { grid-template-columns: 1fr; } .svc-detail-grid.reverse { direction: ltr; } }
+  </style>
+</head>
+<body>
+
+<div id="preloader"><div class="preloader-content"><div class="preloader-logo-wrap">
+      <img src="images/logo-original.png" alt="LoopStack Technologies" class="preloader-logo-img" />
+    </div><div class="preloader-bar"><div class="preloader-fill"></div></div><span class="preloader-txt">Loading LoopStack</span></div></div>
+
+<div class="top-bar"><div class="container"><div class="top-bar-inner"><div class="top-bar-left"><span class="tb-info"><i class="fas fa-clock"></i> Mon – Fri &nbsp;9:00 AM – 6:00 PM IST</span><a class="tb-info" href="mailto:info@loopstacktechnologies.com"><i class="fas fa-envelope"></i> info@loopstacktechnologies.com</a></div><div class="top-bar-right"><div class="tb-social"><a href="https://www.linkedin.com/company/loopstacktechnologies/" target="_blank"><i class="fab fa-linkedin-in"></i></a><a href="https://www.instagram.com/loopstacktechnologies/" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a></div></div></div></div></div>
+
+<header class="site-header" id="header">
+  <div class="container"><div class="header-inner">
+    <a href="index.html" class="logo">
+        <img src="images/logo-original.png" alt="LoopStack Technologies" class="header-logo-img" />
+      </a>
+    <nav class="main-nav"><ul class="nav-list">
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+      <li class="nav-item"><a href="services.html" class="nav-link active">Services <i class="fas fa-chevron-down caret"></i></a><div class="nav-dropdown"><a href="#web"><i class="fas fa-globe"></i> Web Development</a><a href="#mobile"><i class="fas fa-mobile-alt"></i> Mobile Apps</a><a href="#cloud"><i class="fas fa-cloud"></i> Cloud &amp; DevOps</a><a href="#design"><i class="fas fa-paint-brush"></i> UI/UX Design</a><a href="#api"><i class="fas fa-plug"></i> API &amp; Integrations</a></div></li>
+      <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+      <li class="nav-item"><a href="team.html" class="nav-link">Team</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul></nav>
+    <div class="header-right"><a href="contact.html" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get a Quote</a><button class="hamburger" id="hamburger-btn"><span></span><span></span><span></span></button></div>
+  </div></div>
+</header>
+
+<div class="mob-overlay" id="mob-overlay"></div>
+<nav class="mob-menu" id="mob-menu"><div class="mob-header"><a href="index.html" class="logo">
+        <img src="images/logo-original.png" alt="LoopStack Technologies" class="header-logo-img" />
+      </a><button class="mob-close" id="mob-close-btn"><i class="fas fa-times"></i></button></div><ul><li class="mob-nav-item"><a href="index.html" class="mob-nav-link">Home</a></li><li class="mob-nav-item"><a href="about.html" class="mob-nav-link">About Us</a></li><li class="mob-nav-item has-sub"><span class="mob-nav-link mob-nav-toggle">Services <i class="fas fa-chevron-down"></i></span><div class="mob-sub"><a href="#web">Web Development</a><a href="#mobile">Mobile Apps</a><a href="#cloud">Cloud &amp; DevOps</a><a href="#design">UI/UX Design</a><a href="#api">API &amp; Integrations</a></div></li><li class="mob-nav-item"><a href="portfolio.html" class="mob-nav-link">Portfolio</a></li><li class="mob-nav-item"><a href="team.html" class="mob-nav-link">Team</a></li><li class="mob-nav-item"><a href="contact.html" class="mob-nav-link">Contact</a></li></ul><div class="mob-cta"><a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;"><i class="fas fa-paper-plane"></i> Get a Quote</a></div></nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container"><div class="ph-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="sep"><i class="fas fa-chevron-right"></i></span><span class="cur">Services</span></div>
+    <h1>Our IT <span style="color:var(--accent)">Services</span></h1>
+    <p>End-to-end technology services engineered to accelerate your digital transformation and drive business growth.</p>
+  </div></div>
+</section>
+
+<!-- SERVICES OVERVIEW GRID -->
+<section class="services-section">
+  <div class="container">
+    <div class="sec-header center" data-aos="fade-up">
+      <div class="sec-label"><span class="bar"></span> What We Offer</div>
+      <h2 class="sec-title">Comprehensive <span>IT Solutions</span></h2>
+      <p class="sec-desc center">From design to deployment and beyond — we cover every stage of your digital journey.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card" data-aos="fade-up"><div class="svc-card-num">01</div><div class="svc-card-icon"><i class="fas fa-globe"></i></div><h3>Web Development</h3><p>Responsive websites and full-stack web applications built with React, Next.js, Node.js and modern frameworks.</p><a href="#web" class="svc-card-link">View Details <i class="fas fa-arrow-right"></i></a></div>
+      <div class="svc-card" data-aos="fade-up" data-aos-delay="80"><div class="svc-card-num">02</div><div class="svc-card-icon"><i class="fas fa-mobile-alt"></i></div><h3>Mobile Applications</h3><p>Cross-platform iOS &amp; Android apps with Flutter &amp; React Native — native performance, single codebase.</p><a href="#mobile" class="svc-card-link">View Details <i class="fas fa-arrow-right"></i></a></div>
+      <div class="svc-card" data-aos="fade-up" data-aos-delay="160"><div class="svc-card-num">03</div><div class="svc-card-icon"><i class="fas fa-cloud-upload-alt"></i></div><h3>Cloud &amp; DevOps</h3><p>Scalable cloud infrastructure on AWS, GCP &amp; Azure with CI/CD pipelines and container orchestration.</p><a href="#cloud" class="svc-card-link">View Details <i class="fas fa-arrow-right"></i></a></div>
+      <div class="svc-card" data-aos="fade-up"><div class="svc-card-num">04</div><div class="svc-card-icon"><i class="fas fa-paint-brush"></i></div><h3>UI/UX Design</h3><p>User-centered design with Figma — wireframes, prototypes, and pixel-perfect interfaces that convert.</p><a href="#design" class="svc-card-link">View Details <i class="fas fa-arrow-right"></i></a></div>
+      <div class="svc-card" data-aos="fade-up" data-aos-delay="80"><div class="svc-card-num">05</div><div class="svc-card-icon"><i class="fas fa-plug"></i></div><h3>API &amp; Integrations</h3><p>REST and GraphQL APIs, third-party integrations, payment gateways, and custom middleware solutions.</p><a href="#api" class="svc-card-link">View Details <i class="fas fa-arrow-right"></i></a></div>
+      <div class="svc-card" data-aos="fade-up" data-aos-delay="160"><div class="svc-card-num">06</div><div class="svc-card-icon"><i class="fas fa-database"></i></div><h3>Database &amp; Backend</h3><p>Robust database architecture using PostgreSQL, MongoDB &amp; Redis with scalable, secure backend systems.</p><a href="contact.html" class="svc-card-link">Get in Touch <i class="fas fa-arrow-right"></i></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- WEB DEVELOPMENT -->
+<section class="svc-detail" id="web">
+  <div class="container"><div class="svc-detail-grid">
+    <div data-aos="fade-right">
+      <div class="sec-label"><span class="bar"></span> Service 01</div>
+      <h2 class="sec-title">Web <span>Development</span></h2>
+      <p class="sec-desc">We build fast, responsive, and scalable web solutions — from marketing websites to complex enterprise web applications. Every project is crafted for performance and user experience.</p>
+      <div class="svc-features-list">
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>React, Next.js, Vue.js, and Nuxt.js applications</span></div>
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>Node.js, Express, and Python (Django/FastAPI) backends</span></div>
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>E-commerce with Shopify, WooCommerce &amp; custom solutions</span></div>
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>SEO-optimized, Lighthouse 90+ performance scores</span></div>
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>CMS integrations (WordPress, Strapi, Contentful)</span></div>
+      </div>
+      <div class="svc-tag-list"><span class="svc-tag">React</span><span class="svc-tag">Next.js</span><span class="svc-tag">Node.js</span><span class="svc-tag">TypeScript</span><span class="svc-tag">PostgreSQL</span><span class="svc-tag">MongoDB</span></div>
+      <a href="contact.html" class="btn btn-primary" style="margin-top:28px;"><i class="fas fa-paper-plane"></i> Start a Web Project</a>
+    </div>
+    <div data-aos="fade-left"><div class="svc-visual"><i class="fas fa-laptop-code"></i></div></div>
+  </div></div>
+</section>
+
+<!-- MOBILE APPS -->
+<section class="svc-detail" id="mobile">
+  <div class="container"><div class="svc-detail-grid reverse">
+    <div data-aos="fade-right"><div class="svc-visual"><i class="fas fa-mobile-alt"></i></div></div>
+    <div data-aos="fade-left">
+      <div class="sec-label"><span class="bar"></span> Service 02</div>
+      <h2 class="sec-title">Mobile App <span>Development</span></h2>
+      <p class="sec-desc">We develop beautiful, performant mobile applications for iOS and Android. Whether you need a consumer app or an enterprise solution, we deliver exceptional mobile experiences.</p>
+      <div class="svc-features-list">
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>Flutter &amp; React Native cross-platform development</span></div>
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>Native iOS (Swift) and Android (Kotlin) apps</span></div>
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>App Store &amp; Google Play submission and optimization</span></div>
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>Push notifications, offline support, and analytics</span></div>
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>Backend API integration and real-time features</span></div>
+      </div>
+      <div class="svc-tag-list"><span class="svc-tag">Flutter</span><span class="svc-tag">React Native</span><span class="svc-tag">Swift</span><span class="svc-tag">Kotlin</span><span class="svc-tag">Firebase</span></div>
+      <a href="contact.html" class="btn btn-primary" style="margin-top:28px;"><i class="fas fa-paper-plane"></i> Build My App</a>
+    </div>
+  </div></div>
+</section>
+
+<!-- CLOUD & DEVOPS -->
+<section class="svc-detail" id="cloud">
+  <div class="container"><div class="svc-detail-grid">
+    <div data-aos="fade-right">
+      <div class="sec-label"><span class="bar"></span> Service 03</div>
+      <h2 class="sec-title">Cloud &amp; <span>DevOps</span></h2>
+      <p class="sec-desc">We help businesses migrate to the cloud, optimize infrastructure, and automate deployment pipelines — enabling faster releases, greater reliability, and lower operational costs.</p>
+      <div class="svc-features-list">
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>AWS, Google Cloud Platform, and Azure cloud solutions</span></div>
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>Docker containerization and Kubernetes orchestration</span></div>
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>CI/CD pipeline setup with GitHub Actions and Jenkins</span></div>
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>Infrastructure as Code with Terraform &amp; Ansible</span></div>
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>Monitoring, alerting, and performance optimization</span></div>
+      </div>
+      <div class="svc-tag-list"><span class="svc-tag">AWS</span><span class="svc-tag">Docker</span><span class="svc-tag">Kubernetes</span><span class="svc-tag">Terraform</span><span class="svc-tag">CI/CD</span></div>
+      <a href="contact.html" class="btn btn-primary" style="margin-top:28px;"><i class="fas fa-paper-plane"></i> Optimize My Infrastructure</a>
+    </div>
+    <div data-aos="fade-left"><div class="svc-visual"><i class="fas fa-cloud-upload-alt"></i></div></div>
+  </div></div>
+</section>
+
+<!-- UI/UX DESIGN -->
+<section class="svc-detail" id="design">
+  <div class="container"><div class="svc-detail-grid reverse">
+    <div data-aos="fade-right"><div class="svc-visual"><i class="fas fa-paint-brush"></i></div></div>
+    <div data-aos="fade-left">
+      <div class="sec-label"><span class="bar"></span> Service 04</div>
+      <h2 class="sec-title">UI/UX <span>Design</span></h2>
+      <p class="sec-desc">We design digital experiences that are intuitive, beautiful, and conversion-focused. Great design is not just how it looks — it's how it works. We create interfaces users love.</p>
+      <div class="svc-features-list">
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>User research, personas, and journey mapping</span></div>
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>Wireframing and interactive prototyping in Figma</span></div>
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>Design systems and component libraries</span></div>
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>Usability testing and iterative improvement</span></div>
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>Brand identity and visual design guidelines</span></div>
+      </div>
+      <div class="svc-tag-list"><span class="svc-tag">Figma</span><span class="svc-tag">Adobe XD</span><span class="svc-tag">Prototyping</span><span class="svc-tag">Design Systems</span></div>
+      <a href="contact.html" class="btn btn-primary" style="margin-top:28px;"><i class="fas fa-paper-plane"></i> Design My Product</a>
+    </div>
+  </div></div>
+</section>
+
+<!-- API & INTEGRATIONS -->
+<section class="svc-detail" id="api">
+  <div class="container"><div class="svc-detail-grid">
+    <div data-aos="fade-right">
+      <div class="sec-label"><span class="bar"></span> Service 05</div>
+      <h2 class="sec-title">API &amp; <span>Integrations</span></h2>
+      <p class="sec-desc">We build the connective tissue of your tech stack — robust APIs, seamless third-party integrations, and middleware that makes your systems work better together.</p>
+      <div class="svc-features-list">
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>RESTful and GraphQL API design and development</span></div>
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>Payment gateway integration (Razorpay, Stripe, PayPal)</span></div>
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>Third-party service APIs (Google, AWS, Twilio, etc.)</span></div>
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>Microservices architecture and event-driven systems</span></div>
+        <div class="svc-feat-item"><i class="fas fa-check-circle"></i><span>API security, rate limiting, and documentation</span></div>
+      </div>
+      <div class="svc-tag-list"><span class="svc-tag">REST API</span><span class="svc-tag">GraphQL</span><span class="svc-tag">Webhooks</span><span class="svc-tag">Microservices</span><span class="svc-tag">OAuth</span></div>
+      <a href="contact.html" class="btn btn-primary" style="margin-top:28px;"><i class="fas fa-paper-plane"></i> Integrate My Systems</a>
+    </div>
+    <div data-aos="fade-left"><div class="svc-visual"><i class="fas fa-plug"></i></div></div>
+  </div></div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section"><div class="cta-bubble-1"></div><div class="cta-bubble-2"></div><div class="container"><div class="cta-inner"><div class="cta-content" data-aos="fade-right"><h2>Not Sure Which Service You Need?</h2><p>Tell us about your project and we'll recommend the right solution for your business goals and budget.</p></div><div class="cta-actions" data-aos="fade-left"><a href="contact.html" class="btn btn-white"><i class="fas fa-comments"></i> Talk to an Expert</a></div></div></div></section>
+
+<footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><div class="footer-logo"><img src="images/logo-original.png" alt="LoopStack Technologies" class="footer-logo-img" /></div></div><p class="footer-desc">Building useful technology for the modern web.</p><div class="footer-contact-list"><div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:info@loopstacktechnologies.com">info@loopstacktechnologies.com</a></div></div><div class="footer-social-row"><a href="https://www.linkedin.com/company/loopstacktechnologies/" target="_blank"><i class="fab fa-linkedin-in"></i></a><a href="https://www.instagram.com/loopstacktechnologies/" target="_blank"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-github"></i></a></div></div><div class="footer-col"><h5>Our Services</h5><ul class="footer-links"><li><a href="#web"><i class="fas fa-angle-right"></i> Web Development</a></li><li><a href="#mobile"><i class="fas fa-angle-right"></i> Mobile Apps</a></li><li><a href="#cloud"><i class="fas fa-angle-right"></i> Cloud &amp; DevOps</a></li><li><a href="#design"><i class="fas fa-angle-right"></i> UI/UX Design</a></li><li><a href="#api"><i class="fas fa-angle-right"></i> API &amp; Integrations</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul class="footer-links"><li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li><li><a href="team.html"><i class="fas fa-angle-right"></i> Our Team</a></li><li><a href="portfolio.html"><i class="fas fa-angle-right"></i> Portfolio</a></li><li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact Us</a></li></ul></div><div class="footer-col"><h5>Get in Touch</h5><ul class="footer-links"><li><a href="mailto:info@loopstacktechnologies.com"><i class="fas fa-envelope"></i> info@loopstacktechnologies.com</a></li><li><a href="https://www.linkedin.com/company/loopstacktechnologies/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li><li><a href="https://www.instagram.com/loopstacktechnologies/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li></ul></div></div><div class="footer-bottom"><p class="footer-copy">© 2026 LoopStack Technologies. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div></div></div></footer>
+
+<button class="back-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+<script src="js/main.js"></script>
+</body>
+</html>

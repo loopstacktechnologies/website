@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Team | LoopStack Technologies</title>
+  <meta name="description" content="Meet the talented team behind LoopStack Technologies — developers, designers, and strategists building the digital future." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b6eff'/><text y='.9em' font-size='70' x='10' fill='white' font-family='Arial' font-weight='900'>L</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .team-feature-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 26px; margin-top: 60px; }
+    .tf-card { background: #fff; border: 1px solid var(--light-gray); border-radius: var(--radius-lg); padding: 35px 28px; text-align: center; transition: var(--transition); }
+    .tf-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-md); border-color: var(--primary); }
+    .tf-card i { font-size: 2.5rem; color: var(--primary); margin-bottom: 18px; }
+    .tf-card h4 { font-size: 1rem; color: var(--secondary); margin-bottom: 10px; }
+    .tf-card p { font-size: 0.88rem; }
+    @media (max-width: 992px) { .team-feature-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 540px) { .team-feature-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<div id="preloader"><div class="preloader-content"><div class="preloader-logo-wrap">
+      <img src="images/logo-original.png" alt="LoopStack Technologies" class="preloader-logo-img" />
+    </div><div class="preloader-bar"><div class="preloader-fill"></div></div><span class="preloader-txt">Loading LoopStack</span></div></div>
+
+<div class="top-bar"><div class="container"><div class="top-bar-inner"><div class="top-bar-left"><span class="tb-info"><i class="fas fa-clock"></i> Mon – Fri &nbsp;9:00 AM – 6:00 PM IST</span><a class="tb-info" href="mailto:info@loopstacktechnologies.com"><i class="fas fa-envelope"></i> info@loopstacktechnologies.com</a></div><div class="top-bar-right"><div class="tb-social"><a href="https://www.linkedin.com/company/loopstacktechnologies/" target="_blank"><i class="fab fa-linkedin-in"></i></a><a href="https://www.instagram.com/loopstacktechnologies/" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a></div></div></div></div></div>
+
+<header class="site-header" id="header">
+  <div class="container"><div class="header-inner">
+    <a href="index.html" class="logo">
+        <img src="images/logo-original.png" alt="LoopStack Technologies" class="header-logo-img" />
+      </a>
+    <nav class="main-nav"><ul class="nav-list">
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+      <li class="nav-item"><a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down caret"></i></a><div class="nav-dropdown"><a href="services.html#web"><i class="fas fa-globe"></i> Web Development</a><a href="services.html#mobile"><i class="fas fa-mobile-alt"></i> Mobile Apps</a><a href="services.html#cloud"><i class="fas fa-cloud"></i> Cloud &amp; DevOps</a><a href="services.html#design"><i class="fas fa-paint-brush"></i> UI/UX Design</a><a href="services.html#api"><i class="fas fa-plug"></i> API &amp; Integrations</a></div></li>
+      <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+      <li class="nav-item"><a href="team.html" class="nav-link active">Team</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul></nav>
+    <div class="header-right"><a href="contact.html" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get a Quote</a><button class="hamburger" id="hamburger-btn"><span></span><span></span><span></span></button></div>
+  </div></div>
+</header>
+
+<div class="mob-overlay" id="mob-overlay"></div>
+<nav class="mob-menu" id="mob-menu"><div class="mob-header"><a href="index.html" class="logo">
+        <img src="images/logo-original.png" alt="LoopStack Technologies" class="header-logo-img" />
+      </a><button class="mob-close" id="mob-close-btn"><i class="fas fa-times"></i></button></div><ul><li class="mob-nav-item"><a href="index.html" class="mob-nav-link">Home</a></li><li class="mob-nav-item"><a href="about.html" class="mob-nav-link">About Us</a></li><li class="mob-nav-item has-sub"><span class="mob-nav-link mob-nav-toggle">Services <i class="fas fa-chevron-down"></i></span><div class="mob-sub"><a href="services.html#web">Web Development</a><a href="services.html#mobile">Mobile Apps</a><a href="services.html#cloud">Cloud &amp; DevOps</a></div></li><li class="mob-nav-item"><a href="portfolio.html" class="mob-nav-link">Portfolio</a></li><li class="mob-nav-item"><a href="team.html" class="mob-nav-link active">Team</a></li><li class="mob-nav-item"><a href="contact.html" class="mob-nav-link">Contact</a></li></ul><div class="mob-cta"><a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;"><i class="fas fa-paper-plane"></i> Get a Quote</a></div></nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container"><div class="ph-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="sep"><i class="fas fa-chevron-right"></i></span><span class="cur">Our Team</span></div>
+    <h1>Meet the <span style="color:var(--accent)">Team</span></h1>
+    <p>The passionate builders, designers, and strategists powering every project at LoopStack Technologies.</p>
+  </div></div>
+</section>
+
+<!-- TEAM SECTION -->
+<section class="team-section">
+  <div class="container">
+    <div class="sec-header center" data-aos="fade-up">
+      <div class="sec-label"><span class="bar"></span> Our People</div>
+      <h2 class="sec-title">Talented People, <span>Big Ambitions</span></h2>
+      <p class="sec-desc center">Our team brings together diverse expertise in engineering, design, and strategy — united by a shared passion for building great technology.</p>
+    </div>
+
+    <div class="team-grid">
+
+      <!-- Founder Card -->
+      <div class="team-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="team-img">
+          <div class="team-img-placeholder" style="background:linear-gradient(135deg,#0b6eff,#00b4ff);">TR</div>
+          <div class="team-img-overlay">
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/in/tirth-rawal-/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.instagram.com/loopstacktechnologies/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="mailto:info@loopstacktechnologies.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team-info">
+          <h4>Tirth Rawal</h4>
+          <span class="role">Founder &amp; CEO</span>
+        </div>
+      </div>
+
+      <!-- Developer -->
+      <div class="team-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="team-img">
+          <div class="team-img-placeholder" style="background:linear-gradient(135deg,#1a2b4a,#0b3080);">AJ</div>
+          <div class="team-img-overlay">
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/company/loopstacktechnologies/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team-info">
+          <h4>Aryan Joshi</h4>
+          <span class="role">Lead Full-Stack Developer</span>
+        </div>
+      </div>
+
+      <!-- Designer -->
+      <div class="team-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="team-img">
+          <div class="team-img-placeholder" style="background:linear-gradient(135deg,#8b5cf6,#6d28d9);">PR</div>
+          <div class="team-img-overlay">
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/company/loopstacktechnologies/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-figma"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team-info">
+          <h4>Priya Rathod</h4>
+          <span class="role">Lead UI/UX Designer</span>
+        </div>
+      </div>
+
+      <!-- Mobile Developer -->
+      <div class="team-card" data-aos="fade-up" data-aos-delay="240">
+        <div class="team-img">
+          <div class="team-img-placeholder" style="background:linear-gradient(135deg,#00c87a,#008050);">SM</div>
+          <div class="team-img-overlay">
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/company/loopstacktechnologies/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team-info">
+          <h4>Sahil Mehta</h4>
+          <span class="role">Mobile App Developer</span>
+        </div>
+      </div>
+
+      <!-- DevOps Engineer -->
+      <div class="team-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="team-img">
+          <div class="team-img-placeholder" style="background:linear-gradient(135deg,#ff6b35,#cc4a1a);">KP</div>
+          <div class="team-img-overlay">
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/company/loopstacktechnologies/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team-info">
+          <h4>Kavya Patel</h4>
+          <span class="role">DevOps Engineer</span>
+        </div>
+      </div>
+
+      <!-- Backend Developer -->
+      <div class="team-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="team-img">
+          <div class="team-img-placeholder" style="background:linear-gradient(135deg,#0891b2,#065f7a);">RS</div>
+          <div class="team-img-overlay">
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/company/loopstacktechnologies/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team-info">
+          <h4>Rohan Shah</h4>
+          <span class="role">Backend Engineer</span>
+        </div>
+      </div>
+
+      <!-- QA Engineer -->
+      <div class="team-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="team-img">
+          <div class="team-img-placeholder" style="background:linear-gradient(135deg,#e91e8c,#b0146c);">NV</div>
+          <div class="team-img-overlay">
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/company/loopstacktechnologies/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-bug"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team-info">
+          <h4>Neha Verma</h4>
+          <span class="role">QA &amp; Testing Engineer</span>
+        </div>
+      </div>
+
+      <!-- Project Manager -->
+      <div class="team-card" data-aos="fade-up" data-aos-delay="240">
+        <div class="team-img">
+          <div class="team-img-placeholder" style="background:linear-gradient(135deg,#f59e0b,#d97706);">DG</div>
+          <div class="team-img-overlay">
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/company/loopstacktechnologies/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="mailto:info@loopstacktechnologies.com"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team-info">
+          <h4>Dev Gupta</h4>
+          <span class="role">Project Manager</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TEAM VALUES / CULTURE -->
+<section class="section-pad" style="background:var(--off-white);">
+  <div class="container">
+    <div class="sec-header center" data-aos="fade-up">
+      <div class="sec-label"><span class="bar"></span> Our Culture</div>
+      <h2 class="sec-title">Why Great People <span>Love Working Here</span></h2>
+    </div>
+    <div class="team-feature-grid">
+      <div class="tf-card" data-aos="fade-up" data-aos-delay="0">
+        <i class="fas fa-rocket"></i>
+        <h4>Innovative Culture</h4>
+        <p>We encourage experimentation, bold ideas, and learning from failure — that's how great products are born.</p>
+      </div>
+      <div class="tf-card" data-aos="fade-up" data-aos-delay="80">
+        <i class="fas fa-balance-scale"></i>
+        <h4>Work-Life Balance</h4>
+        <p>Flexible work hours, remote-friendly environment, and a team that genuinely cares about your wellbeing.</p>
+      </div>
+      <div class="tf-card" data-aos="fade-up" data-aos-delay="160">
+        <i class="fas fa-chart-line"></i>
+        <h4>Continuous Growth</h4>
+        <p>Learning budgets, tech conferences, and mentorship programs to help you grow as a professional.</p>
+      </div>
+      <div class="tf-card" data-aos="fade-up" data-aos-delay="240">
+        <i class="fas fa-users"></i>
+        <h4>Collaborative Team</h4>
+        <p>Flat hierarchy, open communication, and a culture of sharing knowledge and lifting each other up.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOIN US -->
+<section class="section-pad" style="background:#fff;">
+  <div class="container">
+    <div style="background:linear-gradient(145deg,var(--secondary-dark),#1a2b4a);border-radius:var(--radius-xl);padding:70px;text-align:center;position:relative;overflow:hidden;">
+      <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.025) 1px,transparent 1px);background-size:50px 50px;"></div>
+      <div style="position:relative;z-index:2;" data-aos="fade-up">
+        <div class="sec-label light" style="justify-content:center;"><span class="bar"></span> Join Us</div>
+        <h2 style="color:#fff;margin-bottom:16px;font-size:clamp(1.8rem,3vw,2.6rem);">Ready to Build the <span style="color:var(--accent)">Future</span> With Us?</h2>
+        <p style="color:rgba(255,255,255,0.7);font-size:1.05rem;max-width:540px;margin:0 auto 35px;">We're always looking for talented, passionate people to join our growing team. If you love technology and want to make an impact, we'd love to hear from you.</p>
+        <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-primary"><i class="fas fa-briefcase"></i> View Open Positions</a>
+          <a href="mailto:info@loopstacktechnologies.com" class="btn btn-outline-white"><i class="fas fa-envelope"></i> Send Your Resume</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><div class="footer-logo"><img src="images/logo-original.png" alt="LoopStack Technologies" class="footer-logo-img" /></div></div><p class="footer-desc">Building useful technology for the modern web.</p><div class="footer-contact-list"><div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:info@loopstacktechnologies.com">info@loopstacktechnologies.com</a></div></div><div class="footer-social-row"><a href="https://www.linkedin.com/company/loopstacktechnologies/" target="_blank"><i class="fab fa-linkedin-in"></i></a><a href="https://www.instagram.com/loopstacktechnologies/" target="_blank"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-github"></i></a></div></div><div class="footer-col"><h5>Our Services</h5><ul class="footer-links"><li><a href="services.html#web"><i class="fas fa-angle-right"></i> Web Development</a></li><li><a href="services.html#mobile"><i class="fas fa-angle-right"></i> Mobile Apps</a></li><li><a href="services.html#cloud"><i class="fas fa-angle-right"></i> Cloud &amp; DevOps</a></li><li><a href="services.html#design"><i class="fas fa-angle-right"></i> UI/UX Design</a></li><li><a href="services.html#api"><i class="fas fa-angle-right"></i> API &amp; Integrations</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul class="footer-links"><li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li><li><a href="team.html"><i class="fas fa-angle-right"></i> Our Team</a></li><li><a href="portfolio.html"><i class="fas fa-angle-right"></i> Portfolio</a></li><li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact Us</a></li></ul></div><div class="footer-col"><h5>Get in Touch</h5><ul class="footer-links"><li><a href="mailto:info@loopstacktechnologies.com"><i class="fas fa-envelope"></i> info@loopstacktechnologies.com</a></li><li><a href="https://www.linkedin.com/company/loopstacktechnologies/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li><li><a href="https://www.instagram.com/loopstacktechnologies/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li></ul></div></div><div class="footer-bottom"><p class="footer-copy">© 2026 LoopStack Technologies. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div></div></div></footer>
+
+<button class="back-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+<script src="js/main.js"></script>
+</body>
+</html>

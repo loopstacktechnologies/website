@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LoopStack Technologies | Building Digital Solutions for the Modern World</title>
+  <meta name="description" content="LoopStack Technologies is an IT company specializing in Web Development, Mobile Apps, Cloud &amp; DevOps, UI/UX Design, and API Integrations. Building modern digital solutions." />
+  <meta property="og:title" content="LoopStack Technologies" />
+  <meta property="og:description" content="Building Digital Solutions for the Modern World" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b6eff'/><text y='.9em' font-size='70' x='10' fill='white' font-family='Arial' font-weight='900'>L</text></svg>" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="preloader-content">
+    <div class="preloader-logo-wrap">
+      <img src="images/logo-original.png" alt="LoopStack Technologies" class="preloader-logo-img" />
+    </div>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    <span class="preloader-txt">Loading LoopStack</span>
+  </div>
+</div>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-inner">
+      <div class="top-bar-left">
+        <span class="tb-info"><i class="fas fa-clock"></i> Mon – Fri &nbsp;9:00 AM – 6:00 PM IST</span>
+        <a class="tb-info" href="mailto:info@loopstacktechnologies.com">
+          <i class="fas fa-envelope"></i> info@loopstacktechnologies.com
+        </a>
+      </div>
+      <div class="top-bar-right">
+        <div class="tb-social">
+          <a href="https://www.linkedin.com/company/loopstacktechnologies/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/loopstacktechnologies/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header" id="header">
+  <div class="container">
+    <div class="header-inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <img src="images/logo-original.png" alt="LoopStack Technologies" class="header-logo-img" />
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down caret"></i></a>
+            <div class="nav-dropdown">
+              <a href="services.html#web"><i class="fas fa-globe"></i> Web Development</a>
+              <a href="services.html#mobile"><i class="fas fa-mobile-alt"></i> Mobile Apps</a>
+              <a href="services.html#cloud"><i class="fas fa-cloud"></i> Cloud &amp; DevOps</a>
+              <a href="services.html#design"><i class="fas fa-paint-brush"></i> UI/UX Design</a>
+              <a href="services.html#api"><i class="fas fa-plug"></i> API &amp; Integrations</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="team.html" class="nav-link">Team</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Right -->
+      <div class="header-right">
+        <a href="contact.html" class="btn btn-primary" id="header-cta-btn">
+          <i class="fas fa-paper-plane"></i> Get a Quote
+        </a>
+        <button class="hamburger" id="hamburger-btn" aria-label="Open Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE OVERLAY + MENU -->
+<div class="mob-overlay" id="mob-overlay"></div>
+<nav class="mob-menu" id="mob-menu" aria-label="Mobile Navigation">
+  <div class="mob-header">
+    <a href="index.html" class="logo">
+        <img src="images/logo-original.png" alt="LoopStack Technologies" class="header-logo-img" />
+      </a>
+    <button class="mob-close" id="mob-close-btn" aria-label="Close Menu"><i class="fas fa-times"></i></button>
+  </div>
+
+  <ul>
+    <li class="mob-nav-item"><a href="index.html" class="mob-nav-link">Home</a></li>
+    <li class="mob-nav-item"><a href="about.html" class="mob-nav-link">About Us</a></li>
+    <li class="mob-nav-item has-sub">
+      <span class="mob-nav-link mob-nav-toggle">Services <i class="fas fa-chevron-down"></i></span>
+      <div class="mob-sub">
+        <a href="services.html#web">Web Development</a>
+        <a href="services.html#mobile">Mobile Apps</a>
+        <a href="services.html#cloud">Cloud &amp; DevOps</a>
+        <a href="services.html#design">UI/UX Design</a>
+        <a href="services.html#api">API &amp; Integrations</a>
+      </div>
+    </li>
+    <li class="mob-nav-item"><a href="portfolio.html" class="mob-nav-link">Portfolio</a></li>
+    <li class="mob-nav-item"><a href="team.html" class="mob-nav-link">Team</a></li>
+    <li class="mob-nav-item"><a href="contact.html" class="mob-nav-link">Contact</a></li>
+  </ul>
+
+  <div class="mob-cta">
+    <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">
+      <i class="fas fa-paper-plane"></i> Get a Quote
+    </a>
+  </div>
+  <div class="mob-contact">
+    <a href="mailto:info@loopstacktechnologies.com"><i class="fas fa-envelope"></i> info@loopstacktechnologies.com</a>
+    <a href="https://www.linkedin.com/company/loopstacktechnologies/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+    <a href="https://www.instagram.com/loopstacktechnologies/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+  </div>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
+  <div class="hero-particles"></div>
+
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="blink"></span>
+          IT Solutions &amp; Digital Innovation
+        </div>
+        <h1 class="hero-title">
+          Building <span class="grad">Digital Solutions</span><br/>for the Modern World
+        </h1>
+        <p class="hero-desc">
+          LoopStack Technologies crafts high-performance web &amp; mobile experiences, cloud infrastructure, and scalable software — engineered for the future.
+        </p>
+        <div class="hero-btns">
+          <a href="services.html" class="btn btn-primary" id="hero-explore-btn">
+            <i class="fas fa-rocket"></i> Explore Services
+          </a>
+          <a href="portfolio.html" class="btn btn-outline-white" id="hero-portfolio-btn">
+            <i class="fas fa-th-large"></i> View Our Work
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="h-stat">
+            <div class="num"><span class="counter" data-target="50" data-suffix="+">0+</span></div>
+            <div class="lbl">Projects Delivered</div>
+          </div>
+          <div class="h-stat">
+            <div class="num"><span class="counter" data-target="30" data-suffix="+">0+</span></div>
+            <div class="lbl">Happy Clients</div>
+          </div>
+          <div class="h-stat">
+            <div class="num"><span class="counter" data-target="3" data-suffix="+">0+</span></div>
+            <div class="lbl">Years Experience</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual -->
+      <div class="hero-visual">
+        <div class="hero-visual-ring">
+          <div class="hero-orbit-dot"></div>
+          <div class="hero-orbit-dot"></div>
+          <div class="hero-center-box">💻</div>
+        </div>
+
+        <div class="hero-float-card fc1">
+          <div class="fc-icon blue"><i class="fas fa-code"></i></div>
+          <div class="fc-txt">
+            <strong>Clean Code</strong>
+            <span>Modern Tech Stack</span>
+          </div>
+        </div>
+
+        <div class="hero-float-card fc2">
+          <div class="fc-icon green"><i class="fas fa-shield-alt"></i></div>
+          <div class="fc-txt">
+            <strong>Secure &amp; Scalable</strong>
+            <span>Enterprise Grade</span>
+          </div>
+        </div>
+
+        <div class="hero-float-card fc3">
+          <div class="fc-icon orange"><i class="fas fa-bolt"></i></div>
+          <div class="fc-txt">
+            <strong>Fast Delivery</strong>
+            <span>Agile Process</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ===== SERVICES STRIP ===== -->
+<section class="svc-strip">
+  <div class="container">
+    <div class="svc-strip-grid">
+      <div class="strip-item">
+        <div class="strip-item-icon"><i class="fas fa-globe"></i></div>
+        <div class="strip-item-body">
+          <h4>Web Development</h4>
+          <p>Responsive, high-performance websites and web apps built with modern frameworks.</p>
+        </div>
+      </div>
+      <div class="strip-item">
+        <div class="strip-item-icon"><i class="fas fa-mobile-alt"></i></div>
+        <div class="strip-item-body">
+          <h4>Mobile Applications</h4>
+          <p>Cross-platform iOS &amp; Android apps crafted for seamless user experiences.</p>
+        </div>
+      </div>
+      <div class="strip-item">
+        <div class="strip-item-icon"><i class="fas fa-cloud"></i></div>
+        <div class="strip-item-body">
+          <h4>Cloud &amp; DevOps</h4>
+          <p>Scalable cloud infrastructure with automated CI/CD pipelines and monitoring.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT SECTION ===== -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Image -->
+      <div class="about-img-wrap" data-aos="fade-right">
+        <div class="about-img-main">
+          <div class="about-tech-visual">
+            <!-- Browser chrome -->
+            <div class="atv-topbar">
+              <span class="atv-dot red"></span><span class="atv-dot amber"></span><span class="atv-dot green"></span>
+              <span class="atv-url">loopstack.app/dashboard</span>
+              <i class="fas fa-lock" style="color:var(--accent);font-size:0.75rem;"></i>
+            </div>
+            <!-- Stats row -->
+            <div class="atv-stats-row">
+              <div class="atv-stat-box"><div class="asb-num">50+</div><div class="asb-lbl">Projects</div></div>
+              <div class="atv-stat-box"><div class="asb-num">99%</div><div class="asb-lbl">Uptime</div></div>
+              <div class="atv-stat-box"><div class="asb-num">30+</div><div class="asb-lbl">Clients</div></div>
+            </div>
+            <!-- Chart -->
+            <div class="atv-chart-area">
+              <div class="atv-chart-label">Project Delivery — 2024</div>
+              <div class="atv-bars">
+                <div class="atv-bar" style="height:45%;--d:0.1s"></div>
+                <div class="atv-bar" style="height:70%;--d:0.2s"></div>
+                <div class="atv-bar" style="height:55%;--d:0.3s"></div>
+                <div class="atv-bar" style="height:85%;--d:0.4s"></div>
+                <div class="atv-bar" style="height:60%;--d:0.5s"></div>
+                <div class="atv-bar" style="height:95%;--d:0.6s"></div>
+                <div class="atv-bar" style="height:75%;--d:0.7s"></div>
+                <div class="atv-bar" style="height:100%;--d:0.8s"></div>
+              </div>
+            </div>
+            <!-- Code line -->
+            <div class="atv-code-line"><span class="kw">const</span> app = <span class="fn">buildWith</span>(<span class="str">'LoopStack'</span>);</div>
+            <!-- Progress -->
+            <div class="atv-progress-row">
+              <div class="atv-progress-item">
+                <span class="atv-progress-label">React</span>
+                <div class="atv-progress-bar-wrap"><div class="atv-progress-fill" style="width:92%;--d:0.2s"></div></div>
+                <span class="atv-progress-pct">92%</span>
+              </div>
+              <div class="atv-progress-item">
+                <span class="atv-progress-label">Flutter</span>
+                <div class="atv-progress-bar-wrap"><div class="atv-progress-fill" style="width:88%;--d:0.4s"></div></div>
+                <span class="atv-progress-pct">88%</span>
+              </div>
+              <div class="atv-progress-item">
+                <span class="atv-progress-label">AWS</span>
+                <div class="atv-progress-bar-wrap"><div class="atv-progress-fill" style="width:85%;--d:0.6s"></div></div>
+                <span class="atv-progress-pct">85%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-accent-box">
+          <div class="big-num">3+</div>
+          <div class="big-lbl">Years Building<br/>Digital Products</div>
+        </div>
+        <div class="about-float-badge">
+          <div class="ab-icon"><i class="fas fa-trophy"></i></div>
+          <div class="ab-txt">
+            <strong>50+ Projects</strong>
+            <span>Successfully Delivered</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="about-content" data-aos="fade-left">
+        <div>
+          <div class="sec-label"><span class="bar"></span> Who We Are</div>
+          <h2 class="sec-title">We Build Technology<br/>That <span>Drives Growth</span></h2>
+          <p class="sec-desc">LoopStack Technologies is a forward-thinking IT company focused on delivering practical digital products and modern web solutions. We combine technical excellence with creative design to build software that solves real-world problems.</p>
+        </div>
+
+        <div class="about-feature-list">
+          <div class="about-feat">
+            <div class="af-icon"><i class="fas fa-bullseye"></i></div>
+            <div class="af-txt">
+              <strong>Mission-Driven Development</strong>
+              <p>Every line of code is written with your business goals in mind — practical, scalable, and maintainable.</p>
+            </div>
+          </div>
+          <div class="about-feat">
+            <div class="af-icon"><i class="fas fa-users-cog"></i></div>
+            <div class="af-txt">
+              <strong>Client-Centric Approach</strong>
+              <p>We collaborate closely with clients throughout the entire development lifecycle for best results.</p>
+            </div>
+          </div>
+          <div class="about-feat">
+            <div class="af-icon"><i class="fas fa-layer-group"></i></div>
+            <div class="af-txt">
+              <strong>Modern Tech Stack</strong>
+              <p>We use cutting-edge technologies — React, Node.js, Flutter, AWS, and more — to build future-ready solutions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:14px;flex-wrap:wrap;">
+          <a href="about.html" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Learn More About Us</a>
+          <a href="contact.html" class="btn btn-outline"><i class="fas fa-phone"></i> Let's Talk</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES SECTION ===== -->
+<section class="services-section" id="services">
+  <div class="container">
+    <div class="sec-header center" data-aos="fade-up">
+      <div class="sec-label"><span class="bar"></span> What We Do</div>
+      <h2 class="sec-title">Our Core <span>IT Services</span></h2>
+      <p class="sec-desc center">From ideation to deployment — we deliver end-to-end technology solutions tailored to your business needs.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="svc-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="svc-card-num">01</div>
+        <div class="svc-card-icon"><i class="fas fa-globe"></i></div>
+        <h3>Web Development</h3>
+        <p>Responsive, high-performance websites and full-stack web applications using React, Next.js, Node.js, and modern frameworks.</p>
+        <a href="services.html#web" class="svc-card-link">Explore Service <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="svc-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="svc-card-num">02</div>
+        <div class="svc-card-icon"><i class="fas fa-mobile-alt"></i></div>
+        <h3>Mobile App Development</h3>
+        <p>Cross-platform iOS and Android mobile applications with Flutter &amp; React Native — native performance, single codebase.</p>
+        <a href="services.html#mobile" class="svc-card-link">Explore Service <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="svc-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="svc-card-num">03</div>
+        <div class="svc-card-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+        <h3>Cloud &amp; DevOps</h3>
+        <p>Scalable cloud architectures on AWS, GCP &amp; Azure, with CI/CD pipelines, containerization using Docker &amp; Kubernetes.</p>
+        <a href="services.html#cloud" class="svc-card-link">Explore Service <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="svc-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="svc-card-num">04</div>
+        <div class="svc-card-icon"><i class="fas fa-paint-brush"></i></div>
+        <h3>UI/UX Design</h3>
+        <p>User-centered design with Figma — wireframes, prototypes, and pixel-perfect interfaces that delight users and convert.</p>
+        <a href="services.html#design" class="svc-card-link">Explore Service <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="svc-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="svc-card-num">05</div>
+        <div class="svc-card-icon"><i class="fas fa-plug"></i></div>
+        <h3>API &amp; Integrations</h3>
+        <p>RESTful and GraphQL API development, third-party service integrations, payment gateways, and custom middleware solutions.</p>
+        <a href="services.html#api" class="svc-card-link">Explore Service <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="svc-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="svc-card-num">06</div>
+        <div class="svc-card-icon"><i class="fas fa-database"></i></div>
+        <h3>Database &amp; Backend</h3>
+        <p>Robust database architecture using PostgreSQL, MongoDB &amp; Redis, combined with secure, scalable backend systems.</p>
+        <a href="services.html" class="svc-card-link">Explore Service <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS COUNTER ===== -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-box" data-aos="fade-up">
+        <div class="stat-box-icon"><i class="fas fa-check-circle"></i></div>
+        <div class="stat-num"><span class="counter" data-target="50" data-suffix="+">0</span></div>
+        <div class="stat-lbl">Projects Delivered</div>
+      </div>
+      <div class="stat-box" data-aos="fade-up" data-aos-delay="80">
+        <div class="stat-box-icon"><i class="fas fa-smile"></i></div>
+        <div class="stat-num"><span class="counter" data-target="30" data-suffix="+">0</span></div>
+        <div class="stat-lbl">Happy Clients</div>
+      </div>
+      <div class="stat-box" data-aos="fade-up" data-aos-delay="160">
+        <div class="stat-box-icon"><i class="fas fa-code-branch"></i></div>
+        <div class="stat-num"><span class="counter" data-target="15" data-suffix="+">0</span></div>
+        <div class="stat-lbl">Technologies Used</div>
+      </div>
+      <div class="stat-box" data-aos="fade-up" data-aos-delay="240">
+        <div class="stat-box-icon"><i class="fas fa-user-tie"></i></div>
+        <div class="stat-num"><span class="counter" data-target="3" data-suffix="+">0</span></div>
+        <div class="stat-lbl">Years in Business</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY CHOOSE US ===== -->
+<section class="why-section">
+  <div class="container">
+    <div class="why-grid">
+
+      <!-- Image Side -->
+      <div class="why-img-wrap" data-aos="fade-right">
+        <div class="why-img-main">
+          <div class="why-tech-visual">
+            <!-- Phone mockup -->
+            <div class="wtv-phone">
+              <div class="wtv-phone-notch"></div>
+              <div class="wtv-phone-screen">
+                <div class="wtv-app-header">
+                  <span class="wtv-app-title">LS Dashboard</span>
+                  <div class="wtv-app-dot"></div>
+                </div>
+                <div class="wtv-metric">
+                  <div class="wm-num">₹2.4M</div>
+                  <div class="wm-lbl">Revenue Generated</div>
+                </div>
+                <div class="wtv-mini-cards">
+                  <div class="wtv-mini-card"><i class="fas fa-users"></i><span>30+ Clients</span></div>
+                  <div class="wtv-mini-card"><i class="fas fa-star"></i><span>5★ Rating</span></div>
+                  <div class="wtv-mini-card"><i class="fas fa-rocket"></i><span>50+ Apps</span></div>
+                  <div class="wtv-mini-card"><i class="fas fa-shield-alt"></i><span>Secure</span></div>
+                </div>
+                <div class="wtv-chart-sm">
+                  <div class="wtv-bar-sm" style="height:50%"></div>
+                  <div class="wtv-bar-sm" style="height:70%"></div>
+                  <div class="wtv-bar-sm" style="height:60%"></div>
+                  <div class="wtv-bar-sm" style="height:90%"></div>
+                  <div class="wtv-bar-sm" style="height:75%"></div>
+                  <div class="wtv-bar-sm" style="height:100%"></div>
+                  <div class="wtv-bar-sm" style="height:80%"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Laptop -->
+            <div class="wtv-laptop">
+              <div class="wtv-laptop-screen">
+                <div class="wtv-code-block">
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+            <!-- Floating badges -->
+            <div class="wtv-badge b1">
+              <div class="wtv-badge-icon blue"><i class="fas fa-bolt"></i></div>
+              <div class="wtv-badge-txt"><strong>Fast Delivery</strong><span>Agile Process</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="why-floating wf1">
+          <div class="wf-icon blue"><i class="fas fa-rocket"></i></div>
+          <div class="wf-txt">
+            <strong>Fast Turnaround</strong>
+            <span>Agile &amp; Efficient</span>
+          </div>
+        </div>
+        <div class="why-floating wf2">
+          <div class="wf-icon green"><i class="fas fa-star"></i></div>
+          <div class="wf-txt">
+            <strong>5-Star Rated</strong>
+            <span>Client Satisfaction</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div data-aos="fade-left">
+        <div class="sec-label"><span class="bar"></span> Why LoopStack</div>
+        <h2 class="sec-title">Why Businesses <span>Choose Us</span></h2>
+        <p class="sec-desc" style="margin-bottom:0;">We combine technical expertise with a genuine passion for innovation — delivering solutions that are not just functional, but exceptional.</p>
+
+        <div class="why-features">
+          <div class="why-feat">
+            <i class="fas fa-tachometer-alt"></i>
+            <h5>High Performance</h5>
+            <p>Optimized builds with 90+ Lighthouse scores, fast load times.</p>
+          </div>
+          <div class="why-feat">
+            <i class="fas fa-shield-alt"></i>
+            <h5>Secure by Design</h5>
+            <p>Security-first approach in every layer of your application.</p>
+          </div>
+          <div class="why-feat">
+            <i class="fas fa-expand-arrows-alt"></i>
+            <h5>Scalable Architecture</h5>
+            <p>Built to grow — microservices, cloud-native, and API-first.</p>
+          </div>
+          <div class="why-feat">
+            <i class="fas fa-headset"></i>
+            <h5>Dedicated Support</h5>
+            <p>Ongoing maintenance and support after every project launch.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:30px;">
+          <a href="about.html" class="btn btn-primary"><i class="fas fa-info-circle"></i> Learn More</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESS SECTION ===== -->
+<section class="process-section">
+  <div class="container">
+    <div class="sec-header center" data-aos="fade-up">
+      <div class="sec-label"><span class="bar"></span> Our Process</div>
+      <h2 class="sec-title">How We <span>Work</span></h2>
+      <p class="sec-desc center">A structured, transparent workflow designed to deliver outstanding results — on time and within budget.</p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-line"></div>
+
+      <div class="process-step" data-aos="fade-up" data-aos-delay="0">
+        <div class="process-num">01</div>
+        <h4>Discovery &amp; Planning</h4>
+        <p>We understand your goals, define requirements, and create a detailed project roadmap.</p>
+      </div>
+
+      <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+        <div class="process-num">02</div>
+        <h4>Design &amp; Prototype</h4>
+        <p>UI/UX wireframes and interactive prototypes are created and approved before development.</p>
+      </div>
+
+      <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+        <div class="process-num">03</div>
+        <h4>Develop &amp; Test</h4>
+        <p>Agile sprints with continuous testing, code reviews, and quality assurance at every step.</p>
+      </div>
+
+      <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+        <div class="process-num">04</div>
+        <h4>Launch &amp; Support</h4>
+        <p>Smooth deployment with post-launch monitoring, maintenance, and ongoing support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="sec-header center" data-aos="fade-up">
+      <div class="sec-label light"><span class="bar"></span> Client Reviews</div>
+      <h2 class="sec-title light">What Our <span style="color:var(--accent)">Clients Say</span></h2>
+      <p class="sec-desc light center">Real feedback from real clients — here's what it's like to work with LoopStack Technologies.</p>
+    </div>
+
+    <div class="testi-grid">
+
+      <div class="testi-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="testi-quote">"</div>
+        <div class="testi-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="testi-text">LoopStack built our e-commerce platform from scratch. The team was professional, communicative, and delivered a product that exceeded our expectations — on time and within budget.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">RK</div>
+          <div class="testi-author-info">
+            <strong>Rahul Kumar</strong>
+            <span>Founder, ShopEase India</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="testi-quote">"</div>
+        <div class="testi-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="testi-text">Their mobile app development skills are top-notch. They took our complex requirements and turned them into a sleek, intuitive app that our users absolutely love.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">PD</div>
+          <div class="testi-author-info">
+            <strong>Priya Desai</strong>
+            <span>Product Manager, TechVentures</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="testi-quote">"</div>
+        <div class="testi-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+        </div>
+        <p class="testi-text">We hired LoopStack for our cloud migration and DevOps setup. They set up a robust CI/CD pipeline and reduced our deployment time by 80%. Highly recommend!</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AS</div>
+          <div class="testi-author-info">
+            <strong>Arjun Shah</strong>
+            <span>CTO, DataFlow Solutions</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== TECHNOLOGIES ===== -->
+<section class="tech-section">
+  <div class="container">
+    <div class="sec-header center" data-aos="fade-up">
+      <div class="sec-label"><span class="bar"></span> Tech Stack</div>
+      <h2 class="sec-title">Technologies <span>We Master</span></h2>
+    </div>
+
+    <div class="tech-grid">
+      <div class="tech-item" data-aos="fade-up" data-aos-delay="0"><i class="fab fa-react"></i><span class="tech-name">React</span></div>
+      <div class="tech-item" data-aos="fade-up" data-aos-delay="50"><i class="fab fa-node-js"></i><span class="tech-name">Node.js</span></div>
+      <div class="tech-item" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-python"></i><span class="tech-name">Python</span></div>
+      <div class="tech-item" data-aos="fade-up" data-aos-delay="150"><i class="fab fa-aws"></i><span class="tech-name">AWS</span></div>
+      <div class="tech-item" data-aos="fade-up" data-aos-delay="200"><i class="fab fa-docker"></i><span class="tech-name">Docker</span></div>
+      <div class="tech-item" data-aos="fade-up" data-aos-delay="250"><i class="fab fa-flutter" style="font-family:monospace;font-style:normal;font-size:1.4rem;font-weight:900;color:var(--secondary);">Fl</i><span class="tech-name">Flutter</span></div>
+      <div class="tech-item" data-aos="fade-up" data-aos-delay="50"><i class="fab fa-js-square"></i><span class="tech-name">TypeScript</span></div>
+      <div class="tech-item" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-git-alt"></i><span class="tech-name">Git / CI</span></div>
+      <div class="tech-item" data-aos="fade-up" data-aos-delay="150"><i class="fas fa-database"></i><span class="tech-name">PostgreSQL</span></div>
+      <div class="tech-item" data-aos="fade-up" data-aos-delay="200"><i class="fab fa-figma"></i><span class="tech-name">Figma</span></div>
+      <div class="tech-item" data-aos="fade-up" data-aos-delay="250"><i class="fab fa-vuejs"></i><span class="tech-name">Vue.js</span></div>
+      <div class="tech-item" data-aos="fade-up" data-aos-delay="0"><i class="fab fa-android"></i><span class="tech-name">Android</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA SECTION ===== -->
+<section class="cta-section">
+  <div class="cta-bubble-1"></div>
+  <div class="cta-bubble-2"></div>
+  <div class="container">
+    <div class="cta-inner">
+      <div class="cta-content" data-aos="fade-right">
+        <h2>Ready to Build Something <strong>Amazing?</strong></h2>
+        <p>Let's turn your ideas into powerful digital products. Reach out today and let's start the conversation.</p>
+      </div>
+      <div class="cta-actions" data-aos="fade-left">
+        <a href="contact.html" class="btn btn-white" id="cta-contact-btn"><i class="fas fa-paper-plane"></i> Start a Project</a>
+        <a href="portfolio.html" class="btn btn-outline-white" id="cta-portfolio-btn"><i class="fas fa-th"></i> See Our Work</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="footer-logo"><img src="images/logo-original.png" alt="LoopStack Technologies" class="footer-logo-img" /></div>
+        </div>
+        <p class="footer-desc">Building useful technology for the modern web. We craft scalable digital products that help businesses grow and succeed in the digital age.</p>
+        <div class="footer-contact-list">
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:info@loopstacktechnologies.com">info@loopstacktechnologies.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>India</span>
+          </div>
+        </div>
+        <div class="footer-social-row">
+          <a href="https://www.linkedin.com/company/loopstacktechnologies/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/loopstacktechnologies/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h5>Our Services</h5>
+        <ul class="footer-links">
+          <li><a href="services.html#web"><i class="fas fa-angle-right"></i> Web Development</a></li>
+          <li><a href="services.html#mobile"><i class="fas fa-angle-right"></i> Mobile Apps</a></li>
+          <li><a href="services.html#cloud"><i class="fas fa-angle-right"></i> Cloud &amp; DevOps</a></li>
+          <li><a href="services.html#design"><i class="fas fa-angle-right"></i> UI/UX Design</a></li>
+          <li><a href="services.html#api"><i class="fas fa-angle-right"></i> API &amp; Integrations</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul class="footer-links">
+          <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+          <li><a href="team.html"><i class="fas fa-angle-right"></i> Our Team</a></li>
+          <li><a href="portfolio.html"><i class="fas fa-angle-right"></i> Portfolio</a></li>
+          <li><a href="contact.html"><i class="fas fa-angle-right"></i> Careers</a></li>
+          <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Connect -->
+      <div class="footer-col">
+        <h5>Get in Touch</h5>
+        <ul class="footer-links">
+          <li><a href="mailto:info@loopstacktechnologies.com"><i class="fas fa-envelope"></i> info@loopstacktechnologies.com</a></li>
+          <li><a href="https://www.linkedin.com/company/loopstacktechnologies/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn Company</a></li>
+          <li><a href="https://www.linkedin.com/in/tirth-rawal-/" target="_blank"><i class="fab fa-linkedin"></i> Tirth Rawal (Founder)</a></li>
+          <li><a href="https://www.instagram.com/loopstacktechnologies/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 LoopStack Technologies. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
